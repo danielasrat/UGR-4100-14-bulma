@@ -5,61 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/styles.css">  
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-bar">
-                <li class='title'><a href='./HomePage.html'>Portfolio</a></li>
-                <input type='checkbox' id='check' />
-                <span class="menu">
-                    <li><a href="./HomePage.html">Home</a></li>
-                    <li><a href="./Services.html">Services</a></li>
-                    <li><a href="./Experiences.html">Experiences</a></li>
-                    <li><a href="./Works.html">Works</a></li>
-                    <li><button class="button" id="button1">Contact me</button></li>
-                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                </span>
-                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-            </ul>
+        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger burger" id="burger" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                <a class="navbar-item title" href="./HomePage.html">Portfolio</a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="./HomePage.html">Home</a>
+                    <a class="navbar-item" href="./Services.html">Services</a>
+                    <a class="navbar-item" href="./Experiences.html">Experiences</a>
+                    <a class="navbar-item" href="./Works.html">Works</a>
+                    <button class="button is-info is-rounded" id="button_contact">Contact me</button>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <h2>My Experiences</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vero, nemo incidunt minima facere odit laudantium ad? Assumenda voluptatum asperiores architecto dolorem saepe accusamus quam, tempore quo, iste facilis ut.</p>
-        <img class="image" src="./images/Experienceimg.jpg" alt="">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam autem, facilis unde ab vel est quod repellat a obcaecati temporibus harum repudiandae cupiditate accusamus, quis pariatur laborum magni molestias qui.</p>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quos pariatur dolorem? Alias saepe suscipit delectus facilis hic sequi, eos possimus sit nihil necessitatibus laudantium. Temporibus harum consectetur delectus veniam.</p>
-
-        <p id="lastp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, id maxime dolorum ratione numquam blanditiis sapiente corrupti ipsa. Accusamus enim veniam hic! Id, adipisci explicabo accusantium repellat impedit unde<br> quisquam!<a href="">Full Portfolio</a>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa illo aut, at, corrupti tempora quod dolores nostrum, et voluptas nisi aliquam? Possimus fugiat recusandae suscipit, laboriosam minus quae inventore repudiandae.<a href="">Contact me</a> Any time.</p>
-
-
-    </main>
-    <footer>
-        <div class="footerbox">
-                <div>
-                    <ul class="links">
-                        <h4>Social Media:</h4>
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-youtube"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>                       
-                    </ul>
-                </div>
-                <div>
-                    <ul class="pages">
-                        <h4>Pages</h4>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Experiences</a></li>
-                        <li><a href="">Works</a></li>
-                    </ul>
-                </div>
+    <main class="section">
+        <div class="container">
+            <div class="content">
+                <h2 class="title is-2">My Experiences</h2>
+    
+                <ul>
+                    <li>
+                        <strong>Customer Service Representative - ABC Inc.</strong>
+                        <p>June 2021 - May 2023</p>
+                        <ul>
+                            <li>Answered customer inquiries via phone and email</li>
+                            <li>Resolved customer complaints and issues</li>
+                            <li>Maintained customer records and updated account information</li>
+                        </ul>
+                    </li>
+    
+                    <img class="image" src="./images/Experienceimg.jpg" alt="Experience Image">
+    
+                    <li>
+                        <strong>Administrative Assistant - XYZ Corp.</strong>
+                        <p>June 2022 - Present</p>
+                        <ul>
+                            <li>Assisted with scheduling appointments and meetings</li>
+                            <li>Managed incoming and outgoing mail and correspondence</li>
+                            <li>Prepared reports and presentations using Microsoft Office Suite</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="content">
+                <h2 class="title is-2">Skills</h2>
+                <ul>
+                    <li>JavaScript: ⭐️⭐️⭐️⭐️⭐️</li>
+                    <li>Java: ⭐️⭐️⭐️</li>
+                    <li>Python: ⭐️⭐️⭐️⭐️</li>
+                </ul>
+            </div>
+    
+            <div class="content">
+                <h2 class="title is-2">Awards and Certifications</h2>
+                <ul>
+                    <li>Employee of the Month - ABC Inc. (August 2023)</li>
+                </ul>
+            </div>
         </div>
-        <h5>Copyright &copy; 2023 Daniel Asrat</h5>
+    </main>    
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h4 class="title is-4">Social Media:</h4>
+                    <ul class="footer-links">
+                        <li><a class="fa fa-facebook"></a></li>
+                        <li><a class="fa fa-instagram"></a></li>
+                        <li><a class="fa fa-youtube"></a></li>
+                        <li><a class="fa fa-linkedin"></a></li>                       
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4 class="title is-4">Pages</h4>
+                    <ul class="footer-pages">
+                        <li><a href="./HomePage.html">Home</a></li>
+                        <li><a href="./Services.html">Services</a></li>
+                        <li><a href="./Experiences.html">Experiences</a></li>
+                        <li><a href="./Works.html">Works</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h5 class="title is-5">Copyright &copy; 2023 Daniel Asrat</h5>
+        </div>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

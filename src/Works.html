@@ -5,90 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> 
+    <link rel="stylesheet" href="./css/styles.css">  
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-bar">
-                <li class='title'><a href='./HomePage.html'>Portfolio</a></li>
-                <input type='checkbox' id='check' />
-                <span class="menu">
-                    <li><a href="./HomePage.html">Home</a></li>
-                    <li><a href="./Services.html">Services</a></li>
-                    <li><a href="./Experiences.html">Experiences</a></li>
-                    <li><a href="./Works.html">Works</a></li>
-                    <li><button class="button" id="button1">Contact me</button></li>
-                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                </span>
-                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-            </ul>
+        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger burger" id="burger" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                <a class="navbar-item title" href="./HomePage.html">Portfolio</a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="./HomePage.html">Home</a>
+                    <a class="navbar-item" href="./Services.html">Services</a>
+                    <a class="navbar-item" href="./Experiences.html">Experiences</a>
+                    <a class="navbar-item" href="./Works.html">Works</a>
+                    <button class="button is-info is-rounded" id="button_contact">Contact me</button>
+                </div>
+            </div>
         </nav>
-</header>
-<main>
-        <h2>My Works/Projects</h2>
-        <div class="cardcontainer">
-            <div class="card">
-                <p>web......<br>
-                    vacatinde........<br>
-                    uidedss</p>
-                <img class="img" src="./images/News homepage.png" alt="">
+    </header>
+   
+    <main class="section">
+        <h2 class="title is-2 has-text-centered mt-6 mb-4">My Works/Projects</h2>
+        
+        <div class="columns is-multiline">
+            <div class="column is-one-third">
+                <div class="card is-medium">
+                    <div class="card-content">
+                        <p>News homepage</p>
+                        <p>This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!</p>
+                    </div>
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="./images/News homepage.png" alt="News homepage">
+                        </figure>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <p>web......<br>
-                    vacatinde........<br>
-                    uidedss</p>
-                <img class="img" src="./images/Single Price Grid Component.png" alt="">
+            <div class="column is-one-third">
+                <div class="card is-medium">
+                    <div class="card-content">
+                        <p>Single price grid component</p>
+                        <p>In this challenge, you will build out the pricing component to the designs provided. This is perfect for beginners and people who want to complete a smaller challenge.</p>
+                    </div>
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="./images/Single Price Grid Component.png" alt="Single Price Grid Component">
+                        </figure>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <p>web......<br>
-                    vacatinde........<br>
-                    uidedss</p>
-                <img class="img" src="./images/Multi-step form.png" alt="">
+            <div class="column is-one-third">
+                <div class="card is-medium">
+                    <div class="card-content">
+                        <p>Multi-step form</p>
+                        <p>An excellent test for your form-building and JS skills, this project will pose many challenges along the way to completion.</p>
+                    </div>
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="./images/Multi-step form.png" alt="Multi-step form">
+                        </figure>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <p>web......<br>
-                    vacatinde........<br>
-                    uidedss</p>
-                <img class="img" src="./images/Newsletter sign-up form with success.png" alt="">
+            <div class="column is-one-third">
+                <div class="card is-medium">
+                    <div class="card-content">
+                        <p>Newsletter sign-up form with success message</p>
+                        <p>This will test your skills with basic form structure, validation, and submission. The success state will also be an excellent opportunity to work with DOM manipulation.</p>
+                    </div>
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="./images/Newsletter sign-up form with success.png" alt="News homepage">
+                        </figure>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <p>web......<br>
-                    vacatinde........<br>
-                    uidedss</p>
-                <img class="img" src="./images/Results summary component.png" alt="">
+            <div class="column is-one-third">
+                <div class="card is-medium">
+                    <div class="card-content">
+                        <p>Results summary component</p>
+                        <p>This challenge has something for everyone. It’s an HTML and CSS only project, but we’ve also provided a JSON file of the test results for anyone wanting to practice JS.</p>
+                    </div>
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="./images/Single Price Grid Component.png" alt="Single Price Grid Component">
+                        </figure>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <p>web......<br>
-                    vacatinde........<br>
-                    uidedss</p>
-                <img class="img" src="./images/Age calculator app.png" alt="">
+            <div class="column is-one-third">
+                <div class="card is-medium">
+                    <div class="card-content">
+                        <p>Age calculator app</p>
+                        <p>This challenge is designed to sharpen your JavaScript and form validation skills. Working with dates in JavaScript can be tricky, so this will be a nice test!</p>
+                    </div>
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="./images/Multi-step form.png" alt="Multi-step form">
+                        </figure>
+                    </div>
+                </div>
             </div>
         </div>
-        <footer>
-            <div class="footerbox">
-                    <div>
-                        <ul class="links">
-                            <h4>Social Media:</h4>
-                            <li><a href="#" class="fa fa-facebook"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
-                            <li><a href="#" class="fa fa-youtube"></a></li>
-                            <li><a href="#" class="fa fa-linkedin"></a></li>                       
-                        </ul>
-                    </div>
-
-                    <div>
-                        <ul class="pages">
-                            <h4>Pages</h4>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Experiences</a></li>
-                            <li><a href="">Works</a></li>
-                        </ul>
-                    </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h4 class="title is-4">Social Media:</h4>
+                    <ul class="footer-links">
+                        <li><a id="facebook" class="fa fa-facebook"></a></li>
+                        <li><a id="instagram" class="fa fa-instagram"></a></li>
+                        <li><a id="youtube" class="fa fa-youtube"></a></li>
+                        <li><a id="linkedin" class="fa fa-linkedin"></a></li>                       
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4 class="title is-4">Pages</h4>
+                    <ul class="footer-pages">
+                        <li><a href="./HomePage.html">Home</a></li>
+                        <li><a href="./Services.html">Services</a></li>
+                        <li><a href="./Experiences.html">Experiences</a></li>
+                        <li><a href="./Works.html">Works</a></li>
+                    </ul>
+                </div>
             </div>
-            <h5>Copyright &copy; 2023 Daniel Asrat</h5>
-        </footer>
-</main>
+            <h5 class="title is-5">Copyright &copy; 2023 Daniel Asrat</h5>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

@@ -2,78 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> 
+    <link rel="stylesheet" href="./css/styles.css">    
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-bar">
-                <li class='title'><a href='./HomePage.html'>Portfolio</a></li>
-                <input type='checkbox' id='check' />
-                <span class="menu">
-                    <li><a href="./HomePage.html">Home</a></li>
-                    <li><a href="./Services.html">Services</a></li>
-                    <li><a href="./Experiences.html">Experiences</a></li>
-                    <li><a href="./Works.html">Works</a></li>
-                    <li><button class="button" id="button1">Contact me</button></li>
-                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                </span>
-                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-            </ul>
+        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger burger" id="burger" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                <a class="navbar-item title" href="./HomePage.html">Portfolio</a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="./HomePage.html">Home</a>
+                    <a class="navbar-item" href="./Services.html">Services</a>
+                    <a class="navbar-item" href="./Experiences.html">Experiences</a>
+                    <a class="navbar-item" href="./Works.html">Works</a>
+                    <button class="button is-info is-rounded" id="button_contact">Contact me</button>
+                </div>
+            </div>
         </nav>
     </header>
-    <main class="main">
-        <div class="intro">    
-        <img class="profile" src="./images/ProfilePhoto.JPG" alt="">
-        <buttom class="Frontend">Frontend Developer</buttom>
-        <h1>Hi i'm</h1>
-        <h2>Daniel asrat</h2><br>
-        <p id="description">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Iusto numquam ullam dolorem blanditiis commodi vero neque dicta soluta eveniet nobis aspernatur architecto, cum pariatur animi enim doloribus placeat laboriosam fugit!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo nemo cum dolorum asperiores debitis ut perspiciatis aliquid odio molestias! Nesciunt, temporibus expedita tenetur unde dicta assumenda eligendi accusamus dolores.</p>
-    
-        <button class="button button2">Hire me</button>
-        <button class="button button3">Download Cv</button>
+    <main class="section">
+        <div class="container">
+            <div class="block home-block">    
+                <img class="home-block__img" src="./images/Profilephoto.JPG" alt="">
+                <button class="button is-primary is-rounded">Frontend Developer</button>
+                <h1 class="title is-1">Hi, I'm</h1>
+                <h2 class="title is-2">Daniel Asrat</h2>
+                <p class="home-block__p">I'm a UI/UX Designer and Frontend Developer based in Addis Ababa, Ethiopia.</p>
+                <div class="section button_section">
+                <button class="button is-info is-rounded">Hire me</button>
+                <button class="button is-info is-rounded">Download Cv</button>
+            </div>
         </div>
-        <div class="socialmedia">
-            <h3>Social Media:</h3>
-            <a href="#" class="fa fa-facebook"></a><br> 
-            <a href="#" class="fa fa-instagram"></a><br>
-            <a href="#" class="fa fa-youtube"></a><br>
-            <a href="#" class="fa fa-linkedin"></a>
+            <h3 class="title is-3">Social Media:</h3>
+            <div class="home-block__icons">
+                <a id="facebook" class="fa fa-facebook"></a>
+                <a id="linkedin" class="fa fa-linkedin"></a>
+                <a id="youtube" class="fa fa-youtube"></a>
+                <a id="instagram" class="fa fa-instagram"></a>
+            </div>
+            <div class="home-block__txt">
+                <p>What Can I do?</p><br>
+                <p>I can help you solve your problem, the products I create are certainly done through the research process, which can later produce a product that matches what you want.</p>
+            </div>
+            <br>
         </div>
-        <div class="text">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam magnam adipisci accusamus voluptates quam iusto cum dolorem corporis recusandae, repudiandae eum, eius esse vero magni doloremque nisi, ratione maxime molestiae.</p><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto omnis, fugiat suscipit modi ipsa ipsam aliquid ea saepe maxime repellat quaerat porro debitis placeat excepturi? Nulla possimus maiores magnam repellat.</p>
-        </div>
-        <br>
     </main>
-    <footer>
-        <div class="footerbox">
-                <div>
-                    <ul class="links">
-                        <h4>Social Media:</h4>
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-youtube"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>                       
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h4 class="title is-4">Social Media:</h4>
+                    <ul class="footer-links">
+                        <li><a id="facebook" class="fa fa-facebook"></a></li>
+                        <li><a id="instagram" class="fa fa-instagram"></a></li>
+                        <li><a id="youtube" class="fa fa-youtube"></a></li>
+                        <li><a id="linkedin" class="fa fa-linkedin"></a></li>                       
                     </ul>
                 </div>
-                <div>
-                    <ul class="pages">
-                        <h4>Pages</h4>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Experiences</a></li>
-                        <li><a href="">Works</a></li>
+                <div class="column">
+                    <h4 class="title is-4">Pages</h4>
+                    <ul class="footer-pages">
+                        <li><a href="./HomePage.html">Home</a></li>
+                        <li><a href="./Services.html">Services</a></li>
+                        <li><a href="./Experiences.html">Experiences</a></li>
+                        <li><a href="./Works.html">Works</a></li>
                     </ul>
                 </div>
+            </div>
+            <h5 class="title is-5">Copyright &copy; 2023 Daniel Asrat</h5>
         </div>
-        <h5>Copyright &copy; 2023 Daniel Asrat</h5>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>
