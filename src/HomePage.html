@@ -12,9 +12,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a role="button" class="navbar-burger burger" id="burger" aria-expanded="false" data-target="navbarMenu">
+                <a role="button" class="navbar-burger burger" aria-expanded="false" data-target="navbarMenu">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -34,29 +34,32 @@
     </header>
     <main class="section">
         <div class="container">
-            <div class="block home-block">    
-                <img class="home-block__img" src="./images/Profilephoto.JPG" alt="">
-                <button class="button is-primary is-rounded">Frontend Developer</button>
-                <h1 class="title is-1">Hi, I'm</h1>
-                <h2 class="title is-2">Daniel Asrat</h2>
-                <p class="home-block__p">I'm a UI/UX Designer and Frontend Developer based in Addis Ababa, Ethiopia.</p>
-                <div class="section button_section">
-                <button class="button is-info is-rounded">Hire me</button>
-                <button class="button is-info is-rounded">Download Cv</button>
+            <div class="block home-block columns">    
+                <div class="column is-one-third">
+                    <img src="./images/Profilephoto.JPG" alt="" class="image is-rounded">
+                </div>
+                <div class="column is-two-thirds">
+                    <button class="button is-primary is-rounded">Frontend Developer</button>
+                    <h1 class="title is-1">Hi, I'm</h1>
+                    <h2 class="title is-2">Daniel Asrat</h2>
+                    <p class="content">I'm a UI/UX Designer and Frontend Developer based in Addis Ababa, Ethiopia.</p>
+                    <div class="section button_section">
+                        <button class="button is-info is-rounded" id="Hire_me">Hire me</button>
+                        <button class="button is-info is-rounded" onclick = "downloadCv()">Download CV</button>
+                    </div>
+                </div>
             </div>
-        </div>
             <h3 class="title is-3">Social Media:</h3>
-            <div class="home-block__icons">
-                <a id="facebook" class="fa fa-facebook"></a>
-                <a id="linkedin" class="fa fa-linkedin"></a>
-                <a id="youtube" class="fa fa-youtube"></a>
-                <a id="instagram" class="fa fa-instagram"></a>
+            <div class="columns">
+                <a id="facebook" class="column fa fa-facebook"></a>
+                <a id="linkedin" class="column fa fa-linkedin"></a>
+                <a id="youtube" class="column fa fa-youtube"></a>
+                <a id="instagram" class="column fa fa-instagram"></a>
             </div>
-            <div class="home-block__txt">
+            <div class="content home-block__txt">
                 <p>What Can I do?</p><br>
                 <p>I can help you solve your problem, the products I create are certainly done through the research process, which can later produce a product that matches what you want.</p>
             </div>
-            <br>
         </div>
     </main>
     <footer class="footer">
