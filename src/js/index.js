@@ -32,21 +32,21 @@ burgerIcon.addEventListener('click', () =>{
 
 
   Facebook.addEventListener('click', function() {
-    location.href = "https://www.facebook.com/profile.php?id=100079797836024";
+    window.open("https://www.facebook.com/profile.php?id=100079797836024", "_blank");
 
   })
 
   Instagram.addEventListener('click', function() {
-    location.href = "https://www.instagram.com/_danielasrat/";
+    window.open("https://www.instagram.com/_danielasrat/", "_blank");
     
   })
 
   Youtube.addEventListener('click', function() {
-    location.href = "https://www.youtube.com/@ADTech_Tube";
+    window.open("https://www.youtube.com/@ADTech_Tube", "_blank");
     
   })
 
   Linkedin.addEventListener('click', function() {
-    location.href = "https://www.linkedin.com/in/danielasrat/";
+    window.open("https://www.linkedin.com/in/danielasrat/", "_blank");
     
   })
